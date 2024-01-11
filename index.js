@@ -50,6 +50,7 @@ mongoose
   .then(() => console.log("db connected"))
   .catch((err) => console.log(err));
 
+require("./models/Models");
 app.use("/auth", authRoute);
 
 app.get("/user", (req, res) => {
