@@ -4,13 +4,13 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const session = require("express-session");
 const passport = require("passport");
-const authRoute = require("./routes/Auth");
-const cartRoute = require("./routes/Cart");
-const personalDataRoute = require("./routes/PersonalData.js");
-const productsRoute = require("./routes/Products");
-const uploadsRoute = require("./routes/Uploads");
-const ordersRoute = require("./routes/Orders");
-const stripeRoute = require("./routes/Stripe");
+const authRoute = require("./routes/Auth.js");
+const cartRoute = require("./routes/Cart.js");
+const personalDataRoute = require("./routes/PersonalData.js.js");
+const productsRoute = require("./routes/Products.js");
+const uploadsRoute = require("./routes/Uploads.js");
+const ordersRoute = require("./routes/Orders.js");
+const stripeRoute = require("./routes/Stripe.js");
 
 const app = express();
 
