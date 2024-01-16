@@ -45,6 +45,10 @@ app.use(
       ttl: 14 * 24 * 60 * 60,
       autoRemove: "native",
     }),
+    cookie: {
+      secure: true,
+      sameSite: "none",
+    },
   })
 );
 app.use(passport.initialize());
