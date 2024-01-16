@@ -148,6 +148,7 @@ router.get(
 );
 
 router.get("/logout", function (req, res) {
+  req.session.destroy();
   req.logout(function (err) {
     if (err) console.log(err);
     res.redirect("/");
