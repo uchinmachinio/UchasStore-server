@@ -77,7 +77,7 @@ router.post("/login", (req, res, next) => {
       if (err) {
         return res.status(500).json("Internal server error");
       }
-      return res.json(user);
+      return res.json({ _id: user._id, username: user.username });
     });
   })(req, res, next);
 });
@@ -111,7 +111,7 @@ router.post("/register", (req, res) => {
               .then(() => {
                 // Authenticate the user
                 passport.authenticate("local")(req, res, function () {
-                  return res.json(user);
+                  return res.json({ _id: user._id, username: user.username });
                 });
               })
               .catch((cartError) => {
