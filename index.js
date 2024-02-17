@@ -45,6 +45,7 @@ app.use(
       ttl: 14 * 24 * 60 * 60,
       autoRemove: "native",
       sameSite: "None",
+      secure: true,
     }),
   })
 );
