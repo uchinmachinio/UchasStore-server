@@ -44,6 +44,7 @@ app.use(
       mongoUrl: process.env.MONGO_URI,
       ttl: 14 * 24 * 60 * 60,
       autoRemove: "native",
+      sameSite: "None",
     }),
   })
 );
